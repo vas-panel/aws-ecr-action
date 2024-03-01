@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: docker://ghcr.io/kciter/aws-ecr-action:latest
+    - uses: docker://ghcr.io/giopunt/aws-ecr-action:latest
       with:
         access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -47,11 +47,11 @@ jobs:
 If you don't want to use the latest docker image, you can point to any reference in the repo directly.
 
 ```yaml
-  - uses: kciter/aws-ecr-action@master
+  - uses: giopunt/aws-ecr-action@master
   # or
-  - uses: kciter/aws-ecr-action@v3
+  - uses: giopunt/aws-ecr-action@v1
   # or
-  - uses: kciter/aws-ecr-action@0589ad88c51a1b08fd910361ca847ee2cb708a30
+  - uses: giopunt/aws-ecr-action@0589ad88c51a1b08fd910361ca847ee2cb708a30
 ```
 
 ## License
