@@ -47,7 +47,7 @@ jobs:
 If you don't want to use the latest docker image, you can point to any reference in the repo directly.
 
 ```yaml
-  - uses: giopunt/aws-ecr-action@master
+  - uses: giopunt/aws-ecr-action@main
   # or
   - uses: giopunt/aws-ecr-action@v1
   # or
